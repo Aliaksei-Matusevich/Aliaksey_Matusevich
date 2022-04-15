@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            height: 842px; 
+            width: 690px;
+            /* to centre page on screen*/
+            margin-left: auto;
+            margin-right: auto; 
+        } 
+        </style> 
+</head>
+<body>
+    <h1>Горизонтальное меню</h1>
+    <P><A HREF=site/main.html>
+        Главная</A> |
+        
+        <A HREF=site/catalog.html>
+        Каталог</A> |
+        
+        <A HREF=site/promo.html>
+        Акции </A>  |
+        <A HREF=site/about.html>
+            О нас</A></P>
+    <h1>Меню список</h1>
+    <ul>
+        <li><A HREF=site/main.html>
+            Главная</A></li>
+        <li> <A HREF=site/catalog.html>
+            Каталог</A></li>
+        <li> <A HREF=site/promo.html>
+            Акции </A></li>
+        <li><A HREF=site/about.html>
+            О нас</A></li>
+    </ul>
+    <h1>Меню с вложенным списком</h1>
+    <ul>
+        <li><A HREF=site/main.html>
+            Главная</A></li>
+            <ul><li><a href=site/news/news.html>Новости</a></li></ul>
+        <li> <A HREF=site/catalog.html>
+            Каталог</A></li>
+            <ul><li><a href=site/catalog/a_W.html>Осень-Зима</a></li></ul>
+            <ul><li><a href=site/catalog/s_s.html>Весна-Лето</a></li></ul>
+        <li> <A HREF=site/promo.html>
+            Акции </A></li>
+            <ul><li><a href=site/promo/last.html>Актуальные</a></li></ul>
+            <ul><li><a href=site/promo/old.html>Прошедшие</a></li></ul>
+        <li><A HREF=site/about.html>
+            О нас</A></li>
+            <ul><li><a href=site/about/contacts.html>Контакты</a></li></ul>
+            <ul><li><a href=site/about/scheme.html>Проезд</a></li></ul>
+    </ul>
+    <h1>Меню таблица с вложенными таблицами</h1>
+    <table>
+        <tr>
+            <td><A HREF=site/main.html>
+                Главная</A>
+                <table>
+                    <tr>
+                        <td><a href=site/news/news.html>Новости</a></td>
+                    </tr>
+                </table>
+            </td>     
+        </tr>
+        <tr>
+            <td>
+                <A HREF=site/catalog.html>
+                    Каталог</A>
+                <table>
+                    <tr>
+                        <td><a href=site/catalog/a_W.html>Осень-Зима</a></td><br>
+                    </tr>
+                    <tr>
+                        <td><a href=site/catalog/s_s.html>Весна-Лето</a></td>
+                    </tr>
+                </table>    
+            </td>
+        </tr>
+        <tr>
+           <td>
+            <A HREF=site/promo.html>
+                Акции </A>
+                <table>
+                    <tr>
+                        <td><a href=site/promo/last.html>Актуальные</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=site/promo/old.html>Прошедшие</a></td>
+                    </tr>
+                </table>     
+           </td> 
+        </tr>
+        <tr>
+            <td>
+                <A HREF=site/about.html>
+                    О нас</A>
+                    <table>
+                        <tr>
+                            <td><a href=site/about/contacts.html>Контакты</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=site/about/scheme.html>Проезд</a></td>
+                        </tr>
+                    </table>       
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
