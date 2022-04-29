@@ -1,0 +1,45 @@
+
+.two1{
+    float: left;
+    width: 140px;
+    height: 190px;
+    background-image: url("cards.7e0a18f0\ \(1\).png");
+    margin-left: 200px;
+    
+      
+}
+.q1 {
+   float: left;
+    width: 140px;
+    height: 190px;
+    background-image: url("cards.7e0a18f0\ \(1\).png");
+   
+   background-position-y: 75% ;
+}
+.nine1 {
+   float: left;
+    width: 140px;
+    height: 190px;
+    background-image: url("cards.7e0a18f0\ \(1\).png");
+    
+   background-position-x: 67%  ;
+   background-position-y: 58.30% ;
+}
+.A1 {
+   float: left;
+    width: 140px;
+    height: 190px;
+    background-image: url("cards.7e0a18f0\ \(1\).png");
+    
+   background-position-x: 33%;
+   background-position-y: 91.65% ; 
+}
+.joker1 {
+   float: left;
+    width: 140px;
+    height: 190px;
+    background-image: url("cards.7e0a18f0\ \(1\).png");
+    
+   background-position-y: 100%;
+}
+
