@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table {
+            counter-reset: m 65;
+        }
+        td {
+            counter-increment: m -1;
+        }
+        td::before{
+            content: counter(m);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+            
+        }
+        .shahmat {
+            width: 500px;
+            border-collapse: collapse;
+            margin: 0 auto;
+            
+        }
+        .shahmat td {
+            padding: 15px ;
+            text-align: center;
+            
+        }
+        .shahmat tr{
+            border: 5px solid black;
+        }		
+        .shahmat tr:nth-child(odd) td:nth-child(odd) {
+            background: black;
+            color: #ddd;
+           
+        }	
+        .shahmat tr:nth-child(even) td:nth-child(even) {
+            background: black;
+            color:#ddd;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <table class="shahmat" reversed>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

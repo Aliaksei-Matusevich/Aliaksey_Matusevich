@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body { 
+            height: 842px; 
+            width: 690px;
+            margin-left: auto;
+            margin-right: auto; 
+        } 
+        p{
+            border: 5px solid rgba(28,110,164,0.12);
+            border-radius: 0px 20px 0px 20px;
+            padding: 10px;
+        }
+        ol{
+            position: relative;
+            width: 160px;
+        }
+        
+        a[href$=".jpg"]:hover::after{
+            content: url(images/word.jpg);
+            padding-left: 5px;
+        }
+        a[href$=".png"]:hover:after{
+            content: url(images/pdf.png);
+            padding-left: 5px;
+        }
+        a[href$=".gif"]:hover:after{
+            content: url(images/zip.gif);
+            padding-left: 5px;
+        }
+        li{
+            list-style: url(images/listik.jpg);
+        }
+     
+     
+       
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <p>.DOC или .doc (от англ. <img src="images/strelka.png"><a href="document">document</a>) - расширение имени файла, используемое для файлов, представляющих текст,с разметкой или без. Расширение .DOC часто использовадлось для обозначения простых текстовых файлов без формирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="">Document MS Word</a><img src="images/word.jpg" alt="">
+    </p>
+    <p>Portable Document Format (<img src="images/strelka.png" alt=""><a href="">PDF</a>) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscript.
+        <a href="">Document PDF</a><img src="images/pdf.png" alt="">
+    </p>
+    <p>ZIP - популярный формат сжатия данных и архивизации файлов. Файл в этом формате обычно имеет расширение <img src="images/strelka.png" alt=""><a href="">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов,которые можно из него извлечь путём распаковки с помощью специальной программы
+        <a href="">Арихв</a><img src="images/zip.gif" alt="">
+    </p>
+    <h1>Это список файлов</h1>
+    <ol>
+        <li><a href="images/word.jpg">Document MS Word</a></li>
+        <li><a href="images/pdf.png">Document PDF</a></li>
+        <li><a href="images/zip.gif">Арихв</a></li>
+    </ol>
+</body>
+</html>
