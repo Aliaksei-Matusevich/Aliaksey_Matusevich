@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body { 
+            height: 842px; 
+            width: 690px;
+            margin-left: auto;
+            margin-right: auto; 
+        } 
+        tr:hover{
+            background: green;
+        }
+        th{
+            background: darkgray;
+        }
+        td{
+            border-right: 2px dotted;
+            border-bottom: 2px dotted;
+            
+        }
+        div{
+          position: relative;
+          left: 185px; 
+        }
+        #hideshow{
+            background-color: rgb(54, 54, 205);
+            color: aliceblue;
+            border-radius: 10px;
+            border-color: rgb(54, 54, 205);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table id="table_data">
+        <tr>
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr id="tr1">
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4576</td>
+            <td>2357</td>
+        </tr>
+        <tr id="tr2">
+            <td>Петрова Илона Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>02.04.1943</td>
+            <td>74574</td>
+            <td>56834</td>
+        </tr>
+        <tr id="tr3">
+            <td>Сидоров Андрей Михайлович</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>03.12.1974</td>
+            <td>345678</td>
+            <td>673412</td>
+        </tr>
+        <tr id="tr4">
+            <td>Пупин Кирилл Евгеньевич</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>12.11.1996</td>
+            <td>3245234</td>
+            <td>3243256</td>
+        </tr>
+        <tr id="tr5">
+            <td>Матусевич Алексей Павлович</td>
+            <td>М</td>
+            <td>программист</td>
+            <td>25.09.1992</td>
+            <td>23444234</td>
+            <td>34646344</td>
+        </tr>
+    </table>
+    <input type="button" id="hideshow" value="Нет скрытых строк">
+    <div>ДАННЫЕ О СОТРУДНИКАХ</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+                
+                $('#hideshow').click(function(){
+                $('tr').show();
+                $("#hideshow").prop('value', 'Нет скрытых строк');
+                });
+                    $("#tr1").delegate("td", "click", function() {
+                    $(this).closest("tr").hide();
+                    $("#hideshow").prop('value', 'Показать все строки');
+                    });
+                    $("#tr2").delegate("td", "click", function() {
+                    $(this).closest("tr").hide();
+                    $("#hideshow").prop('value', 'Показать все строки');
+                    });
+                    $("#tr3").delegate("td", "click", function() {
+                    $(this).closest("tr").hide();
+                    $("#hideshow").prop('value', 'Показать все строки');
+                    });
+                    $("#tr4").delegate("td", "click", function() {
+                    $(this).closest("tr").hide();
+                    $("#hideshow").prop('value', 'Показать все строки');
+                    });
+                    $("#tr5").delegate("td", "click", function() {
+                    $(this).closest("tr").hide();
+                    $("#hideshow").prop('value', 'Показать все строки');
+                    });
+                   
+                    
+            });
+        
+    </script>
+</body>
+</html>
