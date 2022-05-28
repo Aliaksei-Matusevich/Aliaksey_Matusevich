@@ -1,4 +1,4 @@
-number = int(input())
+number = int(input()) 
 if 0 <= number <= 9 or 0 >= number >= -9 :
     print("Цифра =", number)
 if 100 <= number <= 999 or -100 >= number >= -999 :
