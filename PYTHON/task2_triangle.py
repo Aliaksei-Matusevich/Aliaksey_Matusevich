@@ -9,6 +9,8 @@ if side_a < side_b + side_c and side_b < side_a + side_c and side_c < side_a + s
         print("Равносторонний.", "Площадь такого треугольника равна", S)
     elif side_c == side_b != side_a or side_b != side_c == side_a or side_b == side_a != side_c:
         print("Равнобедренный.", "Площадь такого треугольника равна", S)
+    elif side_b**2 == side_a**2 + side_c**2 or side_a**2 == side_b**2 + side_c**2 or side_c**2 == side_b**2 + side_a**2:
+        print("Прямоугольный.", "Площадь такого треугольника равна", S)
     else:
         print("Разносторонний.", "Площадь такого треугольника равна", S)
 else:
