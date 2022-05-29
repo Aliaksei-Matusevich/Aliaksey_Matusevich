@@ -11,4 +11,4 @@ if 10 <= number <= 99 or -10 >= number >= -99:
     units = number % 10
     print("Сумма цифр =", dozens + units)
 if 1000 <= number or number <= -1000 :
-    print("Wrong answer")
+    print("Wrong input data")
