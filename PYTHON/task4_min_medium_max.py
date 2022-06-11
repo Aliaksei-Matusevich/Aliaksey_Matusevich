@@ -1,0 +1,5 @@
+arr = list(map(int, input().split()))
+print("Минимальное число в списке - ", min(arr))
+print("Максимальное число в списке - ", max(arr))
+medium = sum(arr) / len(arr)
+print("Среднее значение в списке - ", medium)

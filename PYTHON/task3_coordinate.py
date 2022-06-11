@@ -7,3 +7,4 @@ if float(kb[1]) or int(kb[1]):
     print("k =", kb[1])
 if float(kb[2]) or int(kb[2]):
     print("b =", kb[2])
+ 
