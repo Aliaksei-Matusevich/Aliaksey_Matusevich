@@ -1,6 +1,6 @@
 arr = list(map(int, input().split()))
-l = 5
-r = 2
+l = int(input())
+r = int(input())
 if l >= 0 or r >= 0:
     arr2 = arr[l:r:-1]
     arr2.sort(reverse=True)
