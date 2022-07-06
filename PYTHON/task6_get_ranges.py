@@ -1,4 +1,4 @@
-lst = list(map(int, input().split()))
+lst = list(map(int, input("Введите числа: ").split()))
 def get_ranges(lst):
     s = e = None
     for i in sorted(lst):
